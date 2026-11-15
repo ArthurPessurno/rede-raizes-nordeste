@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Administração - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/produtos.js" defer></script>
+  
+<script src="js/permissoes.js" defer></script>
+<script src="js/admin.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Painel Administrativo — Demonstração</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Gerenciamento do Restaurante</h2>
+        <p>Área administrativa simulada</p>
+      </div>
+
+      
+<div class="acoes-admin">
+  <a href="cardapio.html" class="botao-voltar">
+    Voltar ao cardápio
+  </a>
+
+  <button type="button" id="sair-admin"
+    class="botao-secundario">
+    Sair da administração
+  </button>
+</div>
+
+    </section>
+
+    <nav class="menu-admin" aria-label="Áreas administrativas">
+      <a href="#produtos-admin">Produtos</a>
+      <a href="#pedidos-admin">Pedidos</a>
+      <a href="#promocoes-admin">Promoções</a>
+      <a href="#relatorios-admin">Relatórios</a>
+    </nav>
+
+    
+<p
+  id="mensagem-admin"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+
+    <section id="produtos-admin" class="resumo-carrinho">
+      <h2>Gerenciar Produtos</h2>
+
+      <form id="form-produto">
+        <input type="hidden" id="produto-id">
+
+        <label for="produto-nome">Nome do produto</label>
+        <input id="produto-nome" required maxlength="100">
+
+        <label for="produto-descricao">Descrição</label>
+        <textarea id="produto-descricao" required></textarea>
+
+        <label for="produto-categoria">Categoria</label>
+        <input id="produto-categoria" required>
+
+        <h3>Preços por unidade</h3>
+
+        <label for="preco-centro">Centro (R$)</label>
+        <input id="preco-centro" type="number" min="0.01"
+          step="0.01" required>
+
+        <label for="preco-shopping">Shopping (R$)</label>
+        <input id="preco-shopping" type="number" min="0.01"
+          step="0.01" required>
+
+        <label for="preco-bairro">Bairro (R$)</label>
+        <input id="preco-bairro" type="number" min="0.01"
+          step="0.01" required>
+
+
+        <fieldset class="grupo-disponibilidade">
+          <legend>Disponibilidade</legend>
+
+          <label class="admin-checkbox">
+            <input type="checkbox" id="disponivel-centro" checked>
+            Disponível no Centro
+          </label>
+
+          <label class="admin-checkbox">
+            <input type="checkbox" id="disponivel-shopping" checked>
+            Disponível no Shopping
+          </label>
+
+          <label class="admin-checkbox">
+            <input type="checkbox" id="disponivel-bairro" checked>
+            Disponível no Bairro
+          </label>
+        </fieldset>
+
+
+        <button type="submit">Salvar produto</button>
+        <button type="button" id="limpar-produto"
+          class="botao-secundario">
+          Limpar formulário
+        </button>
+      </form>
+
+      <h3>Produtos cadastrados</h3>
+      <div id="lista-produtos-admin"></div>
+    </section>
+
+    <section id="pedidos-admin" class="resumo-carrinho">
+      <h2>Gerenciar Pedidos</h2>
+      <div id="lista-pedidos-admin"></div>
+    </section>
+
+    <section id="promocoes-admin" class="resumo-carrinho">
+      <h2>Gerenciar Promoções</h2>
+
+      <form id="form-promocao">
+        <label for="promocao-nome">Nome da promoção</label>
+        <input id="promocao-nome" required>
+
+        <label for="promocao-descricao">Descrição</label>
+        <textarea id="promocao-descricao" required></textarea>
+
+        <label for="promocao-unidade">Unidade</label>
+        <select id="promocao-unidade" required>
+          <option value="centro">Centro</option>
+          <option value="shopping">Shopping</option>
+          <option value="bairro">Bairro</option>
+        </select>
+
+        <button type="submit">Cadastrar promoção</button>
+      </form>
+
+      <div id="lista-promocoes-admin"></div>
+    </section>
+
+    <section id="relatorios-admin" class="resumo-carrinho">
+      <h2>Relatórios de Vendas</h2>
+
+      <div id="indicadores-admin" class="indicadores-admin"></div>
+
+      <h3>Produtos mais vendidos</h3>
+      <div id="ranking-produtos"></div>
+
+      <h3>Vendas por unidade</h3>
+      <div id="vendas-unidade"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>

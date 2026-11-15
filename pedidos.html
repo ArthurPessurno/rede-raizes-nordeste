@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meus Pedidos - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+<script src="js/permissoes.js" defer></script>
+<script src="js/pedidos.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Acompanhe seus pedidos</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Meus Pedidos</h2>
+        <p id="nome-cliente"></p>
+      </div>
+
+      <a href="cardapio.html" class="botao-voltar">
+        Voltar ao cardápio
+      </a>
+    </section>
+
+    
+<p
+  id="mensagem-pedidos"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+
+
+    <section
+      aria-labelledby="titulo-historico-pedidos"
+    >
+      <h2 id="titulo-historico-pedidos" tabindex="-1">
+        Histórico de pedidos
+      </h2>
+
+      <div id="lista-pedidos"></div>
+    </section>
+
+
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>O sabor do Nordeste pertinho de você!</p>
+  </header>
+
+  
+<main id="conteudo-principal" class="conteudo" tabindex="-1">
+
+    <section class="selecao-unidade">
+      <h2>Bem-vindo!</h2>
+
+      <p>
+        Escolha a unidade do restaurante
+        para começar seu pedido.
+      </p>
+
+      <form id="form-unidade">
+        <label for="unidade">
+          Selecione uma unidade:
+        </label>
+
+        <select id="unidade" name="unidade" required>
+          <option value="">Escolha uma unidade</option>
+          <option value="centro">Unidade Centro</option>
+          <option value="shopping">Unidade Shopping</option>
+          <option value="bairro">Unidade Bairro</option>
+        </select>
+
+        <button type="submit">
+          Ver cardápio
+        </button>
+      </form>
+
+      <p id="mensagem" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>

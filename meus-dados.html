@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Meus Dados - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="js/permissoes.js" defer></script>
+  <script src="js/meus-dados.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Gerenciamento de dados pessoais</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="pagina-privacidade">
+      <h2>Minha conta e meus dados</h2>
+
+      <p>
+        Consulte os dados armazenados neste
+        navegador para fins de demonstração.
+      </p>
+
+      <h3>Dados cadastrais</h3>
+
+      <p>
+        <strong>Nome:</strong>
+        <span id="dados-nome"></span>
+      </p>
+
+      <p>
+        <strong>E-mail:</strong>
+        <span id="dados-email"></span>
+      </p>
+
+      <h3>Resumo da conta</h3>
+
+      <p id="dados-pedidos"></p>
+      <p id="dados-pontos"></p>
+
+      <h3>Exportação</h3>
+
+      <p>
+        Baixe uma cópia dos dados demonstrativos
+        associados à sua conta.
+      </p>
+
+      <button type="button" id="exportar-dados">
+        Exportar meus dados
+      </button>
+
+      <h3>Exclusão dos dados locais</h3>
+
+      <p>
+        A exclusão removerá o cadastro local,
+        quando existir, e os pedidos associados
+        à conta. O saldo de pontos será afetado.
+      </p>
+
+      <p>
+        Não será possível excluir os dados
+        enquanto houver pedidos em andamento.
+      </p>
+
+      <button
+        type="button"
+        id="excluir-dados"
+        class="botao-cancelar"
+      >
+        Excluir meus dados locais
+      </button>
+
+
+      <p
+        id="mensagem-dados"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+
+      <a href="privacidade.html" class="link-retorno">
+        Consultar Aviso de Privacidade
+      </a>
+
+      <a href="cardapio.html" class="link-retorno">
+        Voltar ao cardápio
+      </a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste — Projeto acadêmico</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fidelidade - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+<script src="js/permissoes.js" defer></script>
+<script src="js/pontos.js" defer></script>
+
+  <script src="js/fidelidade.js" defer></script>
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Programa de Fidelidade</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Meus Pontos</h2>
+        <p id="cliente-fidelidade"></p>
+      </div>
+
+      <a href="cardapio.html" class="botao-voltar">
+        Voltar ao cardápio
+      </a>
+    </section>
+
+
+    <section
+      class="resumo-carrinho"
+      aria-labelledby="titulo-saldo"
+    >
+      <h2 id="titulo-saldo">Seu saldo disponível</h2>
+
+
+
+      <p class="saldo-pontos">
+        <strong id="saldo-pontos">0</strong> pontos
+      </p>
+
+      <p
+        id="mensagem-recompensa"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+    </section>
+
+
+    <section
+      class="resumo-carrinho"
+      aria-labelledby="titulo-regras"
+    >
+      <h2 id="titulo-regras">Como funciona?</h2>
+
+
+      <p>Ganhe 1 ponto a cada R$ 1,00 elegível gasto.</p>
+      <p>Os pontos são creditados após o pagamento aprovado.</p>
+      <p>
+        Ao acumular 100 pontos, você poderá obter
+        R$ 10,00 de desconto em uma compra futura.
+      </p>
+      <p>
+        Para utilizar a recompensa, selecione o desconto
+        na etapa de pagamento.
+      </p>
+
+      <a href="cardapio.html" class="botao-voltar">
+        Fazer novo pedido
+      </a>
+    </section>
+
+
+    <section
+      class="resumo-carrinho"
+      aria-labelledby="titulo-historico-pontos"
+    >
+      <h2 id="titulo-historico-pontos">
+        Histórico de pontos
+      </h2>
+
+
+      <div id="historico-pontos"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>

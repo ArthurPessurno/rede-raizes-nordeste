@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Finalizar Pedido - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+ 
+
+
+<script src="js/produtos.js" defer></script>
+<script src="js/permissoes.js" defer></script>
+
+<script src="js/pontos.js" defer></script>
+
+<script src="js/finalizar.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Finalização do Pedido</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Confira seu pedido</h2>
+        <p id="cliente-pedido"></p>
+        <p id="unidade-pedido"></p>
+      </div>
+
+      <a href="carrinho.html" class="botao-voltar">
+        Voltar ao carrinho
+      </a>
+    </section>
+
+    <section class="resumo-carrinho">
+      <h2>Resumo da compra</h2>
+
+      
+<div
+  id="resumo-produtos"
+  aria-label="Produtos incluídos no pedido"
+></div>
+
+
+      <p class="total-final">
+        Total:
+        <strong id="valor-final">R$ 0,00</strong>
+
+<span id="detalhes-desconto"></span>
+
+      </p>
+    </section>
+
+    <section class="resumo-carrinho" id="area-pagamento">
+      <h2>Pagamento</h2>
+
+      <p>
+        Esta é uma simulação acadêmica.
+        Nenhuma cobrança real será realizada.
+      </p>
+
+      
+<div class="opcao-recompensa">
+  <p id="saldo-checkout"></p>
+
+  <label for="usar-recompensa">
+    
+<input
+  type="checkbox"
+  id="usar-recompensa"
+  aria-describedby="saldo-checkout aviso-recompensa"
+>
+
+    Usar 100 pontos para obter R$ 10,00 de desconto
+  </label>
+
+  
+<p
+  id="aviso-recompensa"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+</div>
+
+
+<form
+  id="form-pagamento"
+  aria-describedby="mensagem-pagamento"
+>
+
+
+        <label for="forma-pagamento">
+          Escolha a forma de pagamento:
+        </label>
+
+        <select id="forma-pagamento" required>
+          <option value="">Selecione</option>
+          <option value="pix">Pix</option>
+          <option value="credito">Cartão de crédito</option>
+          <option value="debito">Cartão de débito</option>
+        </select>
+
+        <label for="resultado-simulacao">
+          Resultado da simulação:
+        </label>
+
+        <select id="resultado-simulacao" required>
+          <option value="">Selecione</option>
+          <option value="aprovado">Pagamento aprovado</option>
+          <option value="recusado">Pagamento recusado</option>
+        </select>
+
+        <button type="submit" id="botao-pagar">
+          Simular pagamento
+        </button>
+      </form>
+
+      
+<p
+  id="mensagem-pagamento"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+    </section>
+
+    
+
+<section
+  class="resumo-carrinho"
+  id="confirmacao-pedido"
+  tabindex="-1"
+  aria-labelledby="titulo-confirmacao"
+  hidden
+>
+
+  
+<h2 id="titulo-confirmacao">Pedido confirmado!</h2>
+
+
+  <p id="numero-pedido"></p>
+  <p id="status-pedido"></p>
+
+  <p>
+    Seu pedido será preparado para retirada no balcão.
+  </p>
+
+  <a href="cardapio.html" class="botao-voltar">
+    Voltar ao cardápio
+  </a>
+
+  <a href="pedidos.html" class="botao-voltar">
+    Acompanhar meu pedido
+  </a>
+</section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>

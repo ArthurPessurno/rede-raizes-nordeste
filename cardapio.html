@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cardápio - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+<script src="js/produtos.js" defer></script>
+<script src="js/cardapio.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>O sabor do Nordeste pertinho de você!</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Nosso Cardápio</h2>
+        <p id="unidade-atual"></p>
+      </div>
+
+
+      <nav class="navegacao-cardapio" aria-label="Navegação do cliente">
+        <a href="index.html" class="botao-voltar">
+          Trocar unidade
+        </a>
+
+
+
+<a href="carrinho.html" class="botao-voltar">
+  Ver carrinho
+</a>
+
+
+<a href="pedidos.html" class="botao-voltar">
+  Meus pedidos
+</a>
+
+
+<a href="fidelidade.html" class="botao-voltar">
+  Meus pontos
+</a>
+
+<a href="meus-dados.html" class="botao-voltar">
+  Meus dados
+</a>
+
+
+
+
+
+<a href="login.html" class="botao-voltar" id="link-login">
+  Entrar / Cadastrar
+</a>
+
+<button
+  type="button"
+  id="botao-sair"
+  class="botao-secundario"
+  hidden
+>
+
+  Sair da conta
+</button>
+      </nav>
+
+
+
+    </section>
+
+    <!-- Promoções ativas da unidade selecionada -->
+    <section
+      id="secao-promocoes"
+      class="secao-promocoes"
+      aria-label="Promoções da unidade"
+      hidden
+    >
+      <h2>Promoções da unidade</h2>
+
+      <div
+        id="lista-promocoes"
+        class="lista-promocoes"
+      ></div>
+    </section>
+
+
+
+    <section aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Produtos do cardápio</h2>
+
+      <p
+        id="mensagem-cardapio"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+
+      <div id="lista-produtos" class="grade-produtos">
+
+
+        <!-- Os produtos serão adicionados pelo JavaScript -->
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+
+    <p>
+      <a href="privacidade.html">
+        Aviso de Privacidade
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>

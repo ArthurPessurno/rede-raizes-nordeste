@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entrar - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Entre na sua conta ou faça seu cadastro</p>
+  </header>
+
+ 
+<main id="conteudo-principal" class="conteudo" tabindex="-1">
+
+    <section class="selecao-unidade area-login">
+      <h2 id="titulo-auth">Entrar na conta</h2>
+
+      <p>
+        Faça login para finalizar seu pedido.
+        Você pode consultar o cardápio sem entrar.
+      </p>
+
+      
+<div class="selecao-perfil">
+  <p>Como deseja entrar?</p>
+
+  <div class="opcoes-perfil">
+    
+<button
+  type="button"
+  id="perfil-cliente"
+  class="perfil-ativo"
+  aria-pressed="true"
+>
+  Cliente
+</button>
+
+<button
+  type="button"
+  id="perfil-admin"
+  class="botao-secundario"
+  aria-pressed="false"
+>
+  Administrador
+</button>
+
+  </div>
+</div>
+
+
+<form id="form-auth" aria-describedby="mensagem-auth">
+
+
+        <div id="campo-nome" hidden>
+          <label for="nome">Nome completo</label>
+          <input
+            type="text"
+            id="nome"
+            autocomplete="name"
+          >
+        </div>
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          required
+        >
+
+       
+<label for="senha">Senha de demonstração</label>
+<input
+  type="password"
+  id="senha"
+  minlength="6"
+  autocomplete="current-password"
+  aria-describedby="ajuda-senha"
+  required
+>
+
+<p id="ajuda-senha">
+  Utilize somente uma senha fictícia.
+  Este protótipo não possui autenticação
+  segura por servidor.
+</p>
+
+
+
+        <div id="campo-privacidade" class="campo-privacidade" hidden>
+          <label for="confirmar-privacidade">
+            <input
+              type="checkbox"
+              id="confirmar-privacidade"
+            >
+
+            <span>
+              Li o
+              <a href="privacidade.html" target="_blank"
+                 rel="noopener noreferrer">
+                Aviso de Privacidade
+              </a>
+              e estou ciente de como meus dados
+              serão utilizados neste protótipo.
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" id="botao-auth">
+          Entrar
+        </button>
+
+      </form>
+
+      
+<p
+  id="mensagem-auth"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+
+      
+<button
+  type="button"
+  id="alternar-auth"
+  class="botao-secundario"
+>
+  Não tenho conta — Cadastrar
+</button>
+
+<p id="dica-admin" hidden>
+  Conta administrativa de demonstração:
+  <strong>admin@demo.local</strong>
+  — senha: <strong>admin123</strong>
+</p>
+
+
+      <a href="cardapio.html" class="link-retorno">
+        Voltar ao cardápio
+      </a>
+    </section>
+  </main>
+
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+
+    <p>
+      <a href="privacidade.html">
+        Aviso de Privacidade
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>

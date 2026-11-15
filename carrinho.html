@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho - Rede Raízes do Nordeste</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+
+<script src="js/produtos.js" defer></script>
+<script src="js/permissoes.js" defer></script>
+
+<script src="js/carrinho.js" defer></script>
+
+</head>
+
+
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">
+    Pular para o conteúdo principal
+  </a>
+
+  <header class="cabecalho">
+
+    <h1>Rede Raízes do Nordeste</h1>
+    <p>Meu Carrinho</p>
+  </header>
+
+  
+<main
+  id="conteudo-principal"
+  class="conteudo-cardapio"
+  tabindex="-1"
+>
+
+    <section class="topo-cardapio">
+      <div>
+        <h2>Seu pedido</h2>
+        <p id="unidade-carrinho"></p>
+      </div>
+
+      <a href="cardapio.html" class="botao-voltar">
+        Continuar comprando
+      </a>
+    </section>
+
+    
+<section
+  id="itens-carrinho"
+  aria-labelledby="titulo-itens-carrinho"
+>
+ 
+
+<h2 id="titulo-itens-carrinho" tabindex="-1">
+  Itens do carrinho
+</h2>
+
+
+<div id="lista-itens-carrinho"></div>
+
+</section>
+
+
+    <section class="resumo-carrinho">
+      <h2>Resumo do pedido</h2>
+      <p>Total: <strong id="total-carrinho">R$ 0,00</strong></p>
+
+      <button id="finalizar-pedido" type="button">
+        Finalizar Pedido
+      </button>
+      
+<p
+  id="aviso-carrinho"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Rede Raízes do Nordeste</p>
+  </footer>
+</body>
+</html>
